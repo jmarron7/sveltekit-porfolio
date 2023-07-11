@@ -8,13 +8,7 @@
 <div class="container">
 	<main>
 		<h1>Get in touch</h1>
-		<form
-			name="contact-form-submission"
-			method="POST"
-			netlify-honeypot="bot-field"
-			data-netlify="true"
-			class="formContainer"
-		>
+		<form name="contact-form-submission" method="POST" data-netlify="true" class="formContainer">
 			<input type="hidden" name="form-name" value="contact-form-submission" />
 			<label for="name">Name</label>
 			<input name="name" id="name" required placeholder="Your Name" type="text" class="textInput" />
