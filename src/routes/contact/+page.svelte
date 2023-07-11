@@ -14,7 +14,6 @@
 			netlify-honeypot="bot-field"
 			data-netlify="true"
 			class="formContainer"
-			netlify
 		>
 			<input type="hidden" name="form-name" value="contact-form-submission" />
 			<label for="name">Name</label>
