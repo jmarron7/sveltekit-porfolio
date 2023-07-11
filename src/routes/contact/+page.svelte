@@ -1,38 +1,43 @@
 <script>
-	import skills from '$lib/Skills';
 </script>
 
 <svelte:head>
-	<title>Jesus Marron — About</title>
+	<title>Jesus Marron — Contact</title>
 </svelte:head>
 
 <div class="container">
 	<main>
-		<h1>About</h1>
-		<p>
-			I'm a self taught software developer with over 2 years of personal frontend and backend
-			experience. I have experience in systems and platform engineering with a focus in
-			infrastructure automation and DevOps. Recently, I've been coding in Go(lang), Java,
-			Typescript, and Sveltekit (and other web technologies), but I tend to learn and use the best
-			technology and approach to best solve the problem I'm facing.
-		</p>
-		<h2>Skills</h2>
-		{#each Object.entries(skills) as [section, technologies]}
-			<ul>
-				<li>
-					<h4>
-						{section}:
-					</h4>
-					<div class="list">
-						{#each technologies as technology}
-							<div>
-								{technology}
-							</div>
-						{/each}
-					</div>
-				</li>
-			</ul>
-		{/each}
+		<h1>Get in touch</h1>
+		<form
+			name="contact-form-submission"
+			method="POST"
+			netlify-honeypot="bot-field"
+			data-netlify="true"
+			class="formContainer"
+		>
+			<input type="hidden" name="form-name" value="contact-form-submission" />
+			<label for="name">Name</label>
+			<input name="name" id="name" required placeholder="Your Name" type="text" class="textInput" />
+			<label for="email">Email</label>
+			<input
+				name="email"
+				id="email"
+				required
+				placeholder="Email Address"
+				type="email"
+				class="textInput"
+			/>
+			<label for="message">Message</label>
+			<input
+				name="message"
+				id="message"
+				required
+				placeholder="What would you like to talk about?"
+				type="text"
+				class="textInput"
+			/>
+			<input type="submit" value="Submit" class="button" />
+		</form>
 	</main>
 </div>
 
@@ -44,40 +49,52 @@
 		justify-content: center;
 		box-sizing: border-box;
 		text-align: center;
-		padding: 1em;
+
 		margin: 0 auto;
 		text-align: center;
+	}
+
+	.textInput {
+		padding: 10px;
+	}
+
+	.button {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: #080c10;
+		border: 2px solid #080c10;
+		padding: 10px;
+		cursor: pointer;
+	}
+
+	.button:hover {
+		background-color: #ffd100;
+		transition: background-color 0.2s ease-in-out;
 	}
 
 	main {
 		max-width: 100%;
 		min-height: 500px;
 		text-align: left;
-		margin-top: 30px;
+		margin-top: 20px;
 		box-sizing: border-box;
 	}
 
 	h1 {
 		font-weight: 700;
-		margin: 0 0 50px 0;
+		margin: 0 0 30px 0;
 		font-size: 36px;
 		text-align: start;
 	}
 
-	h2 {
-		margin-top: 50px;
-	}
-
-	.list {
+	.formContainer {
 		display: flex;
 		flex-direction: column;
-		gap: 30px;
+		gap: 10px;
 	}
 
 	@media (min-width: 900px) {
-		.list {
-			flex-direction: row;
-		}
 		main > h1 {
 			font-size: 48px;
 		}

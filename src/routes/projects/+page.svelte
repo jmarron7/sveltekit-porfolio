@@ -94,8 +94,8 @@
 		display: flex;
 		flex-direction: column;
 		color: #080c10;
-		background: #ffdf4d;
-		opacity: 65%;
+		background: #ffd100;
+
 		padding: 2rem;
 		width: 100%;
 		border-radius: 5px;
