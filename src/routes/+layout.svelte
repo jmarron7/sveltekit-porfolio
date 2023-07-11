@@ -35,7 +35,7 @@
 
 <footer>
 	Created with
-	<span class="svelte">Sveltekit</span>
+	<span class="svelte">SvelteKit</span>
 </footer>
 
 <style>
