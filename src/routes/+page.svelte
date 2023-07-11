@@ -1,60 +1,77 @@
-<script>
+<script lang="ts">
 	import FaLinkedin from 'svelte-icons/fa/FaLinkedin.svelte';
 	import FaGithub from 'svelte-icons/fa/FaGithub.svelte';
 	import FaEnvelope from 'svelte-icons/fa/FaEnvelope.svelte';
-	import FaMedium from 'svelte-icons/fa/FaMedium.svelte';
 	import { modalOpened } from '$lib/store';
+	import ProfilePic from '$lib/components/ProfilePic.svelte';
+
+	import { onMount, onDestroy } from 'svelte';
+
+	let userData: any = {};
+	let userPic: string;
+	let userBio: string;
+
+	const fetchUserData = async () => {
+		const response = await fetch('https://api.github.com/users/jmarron7');
+		if (response.ok) {
+			userData = await response.json();
+			userBio = userData.bio;
+			userPic = userData.avatar_url;
+		} else {
+			console.error('Failed to fetch user data');
+		}
+	};
+
+	onMount(() => {
+		fetchUserData();
+	});
+
+	onDestroy(() => {
+		// Clean up if needed
+	});
 </script>
 
 <svelte:head>
-	<title>Gianmarco Cavallo - Main page</title>
+	<title>Jesus Marron - Software Engineer</title>
 </svelte:head>
 <main>
-	<h1>Hi!✋ <br /> I'm Gianmarco a Front-End Developer 💻 based in Italy</h1>
+	<ProfilePic profile_pic={userPic} />
+	<h1>
+		<strong>Hi, I'm Jesus✋</strong> <br />I'm a Fullstack Software Engineer
+	</h1>
+	<p>{userBio}</p>
+	<a
+		href="https://docs.google.com/document/d/1cBPLzRlOppfwnVhCGqaO9HGFl5P7BUtuXEzbUgLDEmA/edit?usp=sharing"
+		target="_blank"
+	>
+		<div class="resumeButton">View Resume</div>
+	</a>
 	<div class="icons">
-		<div
-			role="button"
-			tabindex="0"
-			on:keypress={() => {
-				modalOpened.set(true);
-			}}
-			on:click={() => {
-				modalOpened.set(true);
-			}}
-		>
+		<a href="mailto:hello@jesusmarron.com">
 			<div class="icon">
 				<FaEnvelope />
 			</div>
-		</div>
-
-		<a
-			href="https://github.com/Ladvace"
-			aria-label="GitHub"
-			target="_blank"
-			rel="noopener noreferrer"
-		>
-			<div class="icon">
-				<FaGithub />
-			</div>
 		</a>
+
+		<div class="icon">
+			<a
+				href="https://github.com/jmarron7"
+				aria-label="GitHub"
+				target="_blank"
+				rel="noopener noreferrer"
+				class="icon"
+			>
+				<FaGithub />
+			</a>
+		</div>
 		<a
-			href="https://www.linkedin.com/in/ladvace/"
+			href="https://www.linkedin.com/in/jesusmarron/"
 			aria-label="Linkedin"
 			target="_blank"
 			rel="noopener noreferrer"
 		>
 			<div class="icon">
 				<FaLinkedin />
-			</div>
-		</a>
-		<a
-			href="https://medium.com/@ladvace"
-			aria-label="Medium"
-			target="_blank"
-			rel="noopener noreferrer"
-		>
-			<div class="icon">
-				<FaMedium />
 			</div>
 		</a>
 	</div>
@@ -65,6 +82,7 @@
 		color: white;
 		text-decoration: none;
 	}
+
 	main {
 		text-align: center;
 		padding: 0;
@@ -83,8 +101,25 @@
 	}
 
 	main > h1 {
-		margin: 50px 10px 0;
+		margin: 10px 10px 0;
 		font-size: 36px;
+	}
+
+	.resumeButton {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: #ffd100;
+		color: #080c10;
+		border: 2px solid #080c10;
+		padding: 10px;
+		cursor: pointer;
+		transition: color 0.2s ease-in-out;
+	}
+
+	.resumeButton:hover {
+		background-color: #ff6a13;
+		transition: background-color 0.2s ease-in-out;
 	}
 
 	.icons {
@@ -97,7 +132,7 @@
 		display: flex;
 		justify-content: space-between;
 		max-width: 200px;
-		margin: 50px auto 0;
+		margin: 25px auto 0;
 	}
 
 	.icon {
@@ -106,7 +141,7 @@
 		width: 40px;
 	}
 	.icon:hover {
-		color: #ca3c25;
+		color: #ffd100;
 	}
 
 	@media (min-width: 900px) {

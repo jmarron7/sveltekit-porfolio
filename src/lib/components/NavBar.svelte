@@ -1,6 +1,5 @@
 <script lang="ts">
 	import Burger from './Hamburger.svelte';
-	import Logo from '$lib/assets/logo.svg';
 	import routes from '$lib/NavRoutes';
 	let opened = false;
 	export let segment: string;
@@ -8,9 +7,7 @@
 
 <div class={opened ? 'NavBar open' : 'NavBar'}>
 	<div class="innerContainer">
-		<a href="/">
-			<img src={Logo} alt="logo" class="logo" />
-		</a>
+		<a href="/" class="logo"> &lt;JM&gt; </a>
 		<div class="burger">
 			<Burger bind:open={opened} />
 		</div>
@@ -38,6 +35,11 @@
 		width: 30px;
 	}
 
+	.logo {
+		color: #ffd100;
+		font-size: 18px;
+	}
+
 	.open {
 		flex-direction: column !important;
 		align-items: center !important;
@@ -52,7 +54,7 @@
 
 	.button:hover::after {
 		content: '';
-		background: #ca3c25;
+		background: #ffd100;
 		display: block;
 		height: 3px;
 		width: 100%;
@@ -62,7 +64,7 @@
 
 	.button.selected:after {
 		content: '';
-		background: #ca3c25;
+		background: #ffd100;
 		display: block;
 		height: 3px;
 		width: 100%;

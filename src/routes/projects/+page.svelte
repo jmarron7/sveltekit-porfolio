@@ -1,18 +1,18 @@
 <script>
 	import projects from '$lib/Projects';
+	import GameGuildImg from '$lib/assets/gameguild.png';
+	import PixlImg from '$lib/assets/gopixl.png';
+	import MGrepImg from '$lib/assets/mgrep.png';
+	import ETLImg from '$lib/assets/etlproject.png';
 </script>
 
 <svelte:head>
-	<title>Gianmarco Cavallo — Projects</title>
+	<title>Jesus Marron — Projects</title>
 </svelte:head>
 
 <div class="projectContainer">
 	<div class="projects">
 		<h1>Projects</h1>
-		<p class="note">
-			Note: most of my projects are under NDA so I am unable to share those projects. If there is
-			anything you would like to see further, please feel free to contact me.
-		</p>
 		{#each projects as project}
 			<div class="project">
 				<div class="header">
@@ -28,11 +28,22 @@
 						</div>
 					</div>
 				</div>
+				<div class="imageContainer">
+					{#if project.title === 'Game Guild'}
+						<img src={GameGuildImg} alt="Game Guild Project" />
+					{:else if project.title === 'Pixl'}
+						<img src={PixlImg} alt="Pixl Project" />
+					{:else if project.title === 'Serverless Spotify ETL Pipeline'}
+						<img src={ETLImg} alt="Serverless Spotify ETL Pipeline Project" />
+					{:else}
+						<img src={MGrepImg} alt="Multithreaded Grep Tool Project" />
+					{/if}
+				</div>
 				<p>
 					{project.description}
 				</p>
 				<a href={project.url} target="_blank" rel="noreferrer">
-					<div class="button">Project url =></div>
+					<div class="button">Source Code</div>
 				</a>
 			</div>
 		{/each}
@@ -42,7 +53,7 @@
 <style>
 	.projectContainer {
 		width: 100%;
-		max-width: 900px;
+		max-width: 700px;
 		display: flex;
 		justify-content: center;
 		box-sizing: border-box;
@@ -50,13 +61,6 @@
 		padding: 1em;
 		margin: 0 auto;
 		text-align: center;
-	}
-
-	.note {
-		opacity: 0.5;
-		margin: 0;
-		max-width: 900px;
-		text-align: left;
 	}
 
 	a {
@@ -80,13 +84,18 @@
 		margin: 0;
 	}
 
+	img {
+		width: 350px;
+	}
+
 	.project {
 		text-align: start;
 		box-sizing: border-box;
 		display: flex;
 		flex-direction: column;
-		color: white;
-		background: #111;
+		color: #080c10;
+		background: #ffdf4d;
+		opacity: 65%;
 		padding: 2rem;
 		width: 100%;
 		border-radius: 5px;
@@ -96,7 +105,7 @@
 
 	.project p {
 		font-weight: 100;
-		color: #708090;
+		color: #0a0e13;
 	}
 
 	.projects {
@@ -127,11 +136,16 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		color: white;
-		border: 2px solid white;
+		color: #080c10;
+		border: 2px solid #080c10;
 		padding: 10px;
+		cursor: pointer;
 	}
 
+	.button:hover {
+		background-color: #ff6a13;
+		transition: background-color 0.2s ease-in-out;
+	}
 	@media (min-width: 900px) {
 		.projectContainer {
 			padding: 0;
@@ -156,6 +170,10 @@
 	@media (min-width: 600px) {
 		.projects {
 			grid-template-columns: 1fr;
+		}
+
+		img {
+			width: 600px;
 		}
 	}
 </style>

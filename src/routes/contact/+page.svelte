@@ -20,7 +20,7 @@
 		{#each Object.entries(skills) as [section, technologies]}
 			<ul>
 				<li>
-					<h4 class="capitalize">
+					<h4>
 						{section}:
 					</h4>
 					<div class="list">
@@ -33,12 +33,6 @@
 				</li>
 			</ul>
 		{/each}
-		<br />
-		<h3>Learn more about what I've done by viewing my resume</h3>
-		<a
-			href="https://docs.google.com/document/d/1cBPLzRlOppfwnVhCGqaO9HGFl5P7BUtuXEzbUgLDEmA/edit?usp=sharing"
-			target="_blank">View on Google Drive</a
-		>
 	</main>
 </div>
 
@@ -59,7 +53,7 @@
 		max-width: 100%;
 		min-height: 500px;
 		text-align: left;
-		margin: 0 auto;
+		margin-top: 30px;
 		box-sizing: border-box;
 	}
 
@@ -72,10 +66,6 @@
 
 	h2 {
 		margin-top: 50px;
-	}
-
-	.capitalize {
-		text-transform: capitalize;
 	}
 
 	.list {
@@ -91,9 +81,5 @@
 		main > h1 {
 			font-size: 48px;
 		}
-	}
-	a {
-		text-decoration: underline;
-		color: #ffd100;
 	}
 </style>

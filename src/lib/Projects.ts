@@ -1,23 +1,30 @@
+
 const projects = [
 	{
-		title: 'GDLauncher',
-		technologies: ['Node', 'React', 'Redux', 'Electron'],
+		title: 'Game Guild',
+		technologies: ['React', 'Typescript', 'ChakraUI', 'REST API'],
 		description:
-			'GDLauncher is a simple, yet powerful Minecraft custom launcher with a strong focus on the user experience',
-		url: 'https://github.com/gorilla-devs/GDLauncher'
+			'WebApp using RAWG API videogame data built with Typescript, React, and ChakraUI with filtering and sorting capabilities',
+		url: 'https://github.com/jmarron7/game-guild'
 	},
 	{
-		title: 'WiseMan Discord Bot',
-		technologies: ['NodeJs', 'FireBase', 'MongoDb', 'golang'],
+		title: 'Pixl',
+		technologies: ['Go', 'Fyne'],
 		description:
-			'The wiseMan bot allows you to level up based on the time you spend in a vocal channel',
-		url: 'https://github.com/Ladvace/WiseMan-DiscordBot'
+			'Cross platform pixel art editor written in Go and Fyne toolkit with functionality to open/save created files, select color via color picker, and more',
+		url: 'https://github.com/jmarron7/go-pixl'
 	},
 	{
-		title: 'Easy-react-carousel',
-		technologies: ['React', 'NodeJs'],
-		description: 'A simple carousel made in reactjs',
-		url: 'https://github.com/Ladvace/easy-react-carousel'
+		title: 'Serverless Spotify ETL Pipeline',
+		technologies: ['Python', 'AWS', 'REST API'],
+		description: 'Python ETL (Extract, Transform, Load) pipeline using the Spotify API on AWS Serverless Architecture',
+		url: 'https://github.com/jmarron7/spotify-etl-project'
+	},
+	{
+		title: 'Multithreaded Grep Tool',
+		technologies: ['Go'],
+		description: 'Terminal CLI application of a multithreaded grep implementation written in Go for substring searching within files',
+		url: 'https://github.com/jmarron7/go-mgrep'
 	}
 ];
 
