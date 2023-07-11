@@ -4,8 +4,7 @@
 	import FaEnvelope from 'svelte-icons/fa/FaEnvelope.svelte';
 	import ProfilePic from '$lib/components/ProfilePic.svelte';
 
-	import { onMount, onDestroy } from 'svelte';
-	import ProfilePicPlaceholder from '$lib/components/ProfilePicPlaceholder.svelte';
+	import { onMount } from 'svelte';
 
 	let userData: any = {};
 	let userPic: string;
