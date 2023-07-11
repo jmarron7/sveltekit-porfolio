@@ -26,6 +26,7 @@
 		<h1>Get in touch</h1>
 		<form
 			name="contact-form-submission"
+			id="contact-form-submission"
 			method="POST"
 			netlify
 			netlify-honeypot="bot-field"
