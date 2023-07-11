@@ -1,4 +1,20 @@
+<script context="module">
+	export const prerender = true;
+</script>
+
 <script>
+	const handleSubmit = (e) => {
+		e.preventDefault();
+		let myForm = document.getElementById('contact-form-submission');
+		let formData = new FormData(myForm);
+		fetch('/', {
+			method: 'POST',
+			headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+			body: new URLSearchParams(formData).toString()
+		})
+			.then(() => console.log('Form successfully submitted'))
+			.catch((error) => alert(error));
+	};
 </script>
 
 <svelte:head>
@@ -14,6 +30,7 @@
 			netlify
 			netlify-honeypot="bot-field"
 			class="formContainer"
+			on:submit={handleSubmit}
 		>
 			<input type="hidden" name="form-name" value="contact-form-submission" />
 			<label for="name">Name</label>
@@ -28,12 +45,11 @@
 				class="textInput"
 			/>
 			<label for="message">Message</label>
-			<input
+			<textarea
 				name="message"
 				id="message"
 				required
 				placeholder="What would you like to talk about?"
-				type="text"
 				class="textInput"
 			/>
 			<input type="submit" value="Submit" class="button" />
