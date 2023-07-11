@@ -2,10 +2,10 @@
 	import FaLinkedin from 'svelte-icons/fa/FaLinkedin.svelte';
 	import FaGithub from 'svelte-icons/fa/FaGithub.svelte';
 	import FaEnvelope from 'svelte-icons/fa/FaEnvelope.svelte';
-	import { modalOpened } from '$lib/store';
 	import ProfilePic from '$lib/components/ProfilePic.svelte';
 
 	import { onMount, onDestroy } from 'svelte';
+	import ProfilePicPlaceholder from '$lib/components/ProfilePicPlaceholder.svelte';
 
 	let userData: any = {};
 	let userPic: string;
@@ -24,10 +24,6 @@
 
 	onMount(() => {
 		fetchUserData();
-	});
-
-	onDestroy(() => {
-		// Clean up if needed
 	});
 </script>
 
