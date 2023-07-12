@@ -26,25 +26,6 @@
 		text-align: center;
 	}
 
-	.textInput {
-		padding: 10px;
-	}
-
-	.button {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		color: #080c10;
-		border: 2px solid #080c10;
-		padding: 10px;
-		cursor: pointer;
-	}
-
-	.button:hover {
-		background-color: #ffd100;
-		transition: background-color 0.2s ease-in-out;
-	}
-
 	main {
 		max-width: 100%;
 		min-height: 500px;
@@ -58,12 +39,6 @@
 		margin: 0 0 30px 0;
 		font-size: 36px;
 		text-align: start;
-	}
-
-	.formContainer {
-		display: flex;
-		flex-direction: column;
-		gap: 10px;
 	}
 
 	@media (min-width: 900px) {

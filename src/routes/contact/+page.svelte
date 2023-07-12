@@ -27,6 +27,7 @@
 		<form
 			name="contact-form-submission"
 			id="contact-form-submission"
+            action="/contact/success"
 			method="POST"
 			netlify
 			netlify-honeypot="bot-field"
