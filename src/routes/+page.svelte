@@ -27,7 +27,7 @@
 </script>
 
 <svelte:head>
-	<title>Jesus Marron - Software Engineer</title>
+	<title>DEV -- Jesus Marron - Software Engineer</title>
 </svelte:head>
 <main>
 	<ProfilePic profile_pic={userPic} />
