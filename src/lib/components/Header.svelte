@@ -29,7 +29,7 @@
 </div>
 
 <div class="-mt-20 px-10 z-10">
-	<div class="w-28 rounded-full relative z-50 overflow-hidden">
+	<div class="w-28 rounded-full relative z-50 overflow-hidden border-solid border-2 border-surface-50">
 		<img
 			src={avatar}
 			alt="avatar"
@@ -43,6 +43,7 @@
 			<a
 				class="text-base ml-2 text-gray-400 underline hover:text-gray-500 transition-all hover:no-underline"
 				href="https://www.linkedin.com/in/jesusmarron"
+                target="_blank"
 			>
 				is looking for a job
 			</a>
