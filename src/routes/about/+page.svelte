@@ -1,6 +1,10 @@
 <script lang="ts">
 </script>
 
+<svelte:head>
+	<title>Jesus Marron - About</title>
+</svelte:head>
+
 <h2 class="text-3xl mb-2 font-semibold">About Me</h2>
 
 <p>
@@ -24,7 +28,7 @@
 	more to create scripts for games I was playing at the time. I also spent a lot of time learning <a
 		href="https://en.wikipedia.org/wiki/TI-BASIC_83"
 		target="_blank"
-		class="underline text-secondary-500 hover:text-secondary-700">TI-BASIC</a
+		class="underline decoration-2 text-secondary-500 hover:text-secondary-700">TI-BASIC</a
 	>
 	to create programs on the TI-83 calculator to help me solve various math equations and formulas a lot
 	faster.
@@ -40,7 +44,7 @@
 	<a
 		href="https://www.tech901.org/"
 		target="_blank"
-		class="underline text-primary-500 hover:text-primary-700"
+		class="underline decoration-2 text-primary-500 hover:text-primary-700"
 	>
 		Tech901
 	</a> where I gained skills in IT fundamentals, computer science fundamentals, and data analytics.
@@ -55,7 +59,7 @@
 	Typescript. I also started volunteering with <a
 		href="https://www.code-crew.org/"
 		target="_blank"
-		class="underline text-error-500 hover:text-error-700">CodeCrew</a
+		class="underline decoration-2 text-error-500 hover:text-error-700">CodeCrew</a
 	> as a Technical Volunteer during their "Hour of Code" event and still try to volunteer once a year
 	for the same event. With my IT troubleshooting skills and coding knowledge, I was able to transition
 	into a Systems Engineering role once my previous contract role ended. There I learned a lot about both
@@ -91,7 +95,7 @@
 	<a
 		href="https://www.allaboutfasttrack.com/"
 		target="_blank"
-		class="underline text-warning-500 hover:text-warning-700"
+		class="underline decoration-2 text-warning-500 hover:text-warning-700"
 		>Cook Systems' FastTrack Fullstack Software Development Program.
 	</a> I recently graduated from the program and learned how to use Java, Spring Boot, Angular, Typescript,
 	and PostgreSQL to build fullstack applications both from scratch and under predefined requirements.
@@ -103,20 +107,19 @@
 	Currently, I'm still looking for a permanent or long term role as a Software Engineer. If you are
 	interested in reaching out to me, feel free to contact me through any means you find in the <a
 		href="/contact"
-		target="_blank"
-		class="underline text-success-600 hover:text-success-800">Contact</a
+		class="underline decoration-2 text-success-600 hover:text-success-700">Contact</a
 	>
 	section. Additionally, if you are wanting to connect remotely with other people in the software development
 	space, feel free to join the
 	<a
 		href="https://join.slack.com/t/code-connector/shared_invite/zt-20bur4uzb-Xedt2JrRlYTRJjE5SqLlCA"
 		target="_blank"
-		class="underline text-tertiary-500 hover:text-tertiary-700">Code Connector</a
+		class="underline decoration-2 text-tertiary-500 hover:text-tertiary-700">Code Connector</a
 	>
 	Slack group. Feel free to learn more about them
 	<a
 		href="https://codeconnector.io/"
 		target="_blank"
-		class="underline text-tertiary-500 hover:text-tertiary-700">here!</a
+		class="underline decoration-2 text-tertiary-500 hover:text-tertiary-700">here!</a
 	>
 </p>

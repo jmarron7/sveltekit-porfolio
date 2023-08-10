@@ -4,27 +4,45 @@
 	const menuItems = [
 		{
 			name: 'Home',
-			link: '/'
+			link: '/',
+			selectedClass: 'bg-primary-500 text-surface-900 text-center',
+			hoverClass: 'hover:bg-primary-500 hover:text-surface-900',
+			underlineColor: 'decoration-primary-500'
 		},
 		{
 			name: 'About',
-			link: '/about'
+			link: '/about',
+			selectedClass: 'bg-secondary-500 text-surface-900 text-center',
+			hoverClass: 'hover:bg-secondary-500 hover:text-surface-900',
+			underlineColor: 'decoration-secondary-500'
 		},
 		{
 			name: 'Experience',
-			link: '/experience'
+			link: '/experience',
+			selectedClass: 'bg-tertiary-500 text-surface-900 text-center',
+			hoverClass: 'hover:bg-tertiary-500 hover:text-surface-900',
+			underlineColor: 'decoration-tertiary-500'
 		},
 		{
 			name: 'Skills',
-			link: '/skills'
+			link: '/skills',
+			selectedClass: 'bg-error-500 text-surface-900 text-center',
+			hoverClass: 'hover:bg-error-500 hover:text-surface-900',
+			underlineColor: 'decoration-error-500'
 		},
 		{
 			name: 'Projects',
-			link: '/projects'
+			link: '/projects',
+			selectedClass: 'bg-warning-500 text-surface-900 text-center',
+			hoverClass: 'hover:bg-warning-500 hover:text-surface-900',
+			underlineColor: 'decoration-warning-500'
 		},
 		{
 			name: 'Contact',
-			link: '/contact'
+			link: '/contact',
+			selectedClass: 'bg-success-500 text-surface-900 text-center',
+			hoverClass: 'hover:bg-success-500 hover:text-surface-900',
+			underlineColor: 'decoration-success-500'
 		}
 	];
 </script>
@@ -34,9 +52,10 @@
 		<a
 			href={item.link}
 			class="h-8 col-span-1 flex items-center justify-center md:transition-all {$page.url
-				.pathname === item.link
-				? 'bg-primary-500 text-surface-900 text-center'
-				: ''} rounded hover:bg-primary-500 hover:text-surface-900"
+				.pathname === item.link ||
+			($page.url.pathname === '/' && item.link === '/')
+				? item.selectedClass
+				: ''} rounded underline decoration-2 {item.underlineColor} {item.hoverClass}"
 		>
 			{item.name}
 		</a>

@@ -1,8 +1,12 @@
 <script lang="ts">
-	import { navigating } from '$app/stores';
 	import Icon from '@iconify/svelte';
 
 	const socialArr = [
+		{
+			name: 'Email',
+			icon: 'fluent:mail-24-filled',
+			link: 'mailto:hello@jesusmarron.com'
+		},
 		{
 			name: 'GitHub',
 			icon: 'uiw:github',

@@ -52,7 +52,9 @@
 
 			<div class="inline-flex items-center mr-4 mb-2">
 				<Icon icon="fluent:mail-16-filled" class="text-lg mr-2" />
-				<p class="text-surface-400 text-sm hover:underline hover:decoration-primary-500">
+				<p
+					class="text-surface-400 text-sm hover:underline hover:decoration-2 hover:decoration-primary-500"
+				>
 					<a href="mailto:hello@jesusmarron.com"> hello@jesusmarron.com </a>
 				</p>
 			</div>
