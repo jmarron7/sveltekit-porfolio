@@ -4,6 +4,7 @@
 			name: 'Project 1',
 			description:
 				'Deserunt reprehenderit adipisicing aliquip deserunt ex enim esse in nulla tempor incididunt cillum elit.',
+			tech: 'Go, Sveltekit, Typescript, PostgreSQL',
 			selectedClass: 'bg-primary-500 text-surface-900 text-center',
 			hoverClass: 'hover:bg-primary-500 hover:text-surface-900',
 			underlineColor: 'decoration-primary-500'
@@ -12,6 +13,7 @@
 			name: 'Project 2',
 			description:
 				'Deserunt reprehenderit adipisicing aliquip deserunt ex enim esse in nulla tempor incididunt cillum elit.',
+			tech: 'Go, Sveltekit, Typescript, PostgreSQL',
 			selectedClass: 'bg-secondary-500 text-surface-900 text-center',
 			hoverClass: 'hover:bg-secondary-500 hover:text-surface-900',
 			underlineColor: 'decoration-secondary-500'
@@ -20,6 +22,7 @@
 			name: 'Project 3',
 			description:
 				'Deserunt reprehenderit adipisicing aliquip deserunt ex enim esse in nulla tempor incididunt cillum elit.',
+			tech: 'Go, Sveltekit, Typescript, PostgreSQL',
 			selectedClass: 'bg-tertiary-500 text-surface-900 text-center',
 			hoverClass: 'hover:bg-tertiary-500 hover:text-surface-900',
 			underlineColor: 'decoration-tertiary-500'
@@ -28,6 +31,7 @@
 			name: 'Project 4',
 			description:
 				'Deserunt reprehenderit adipisicing aliquip deserunt ex enim esse in nulla tempor incididunt cillum elit.',
+			tech: 'Go, Sveltekit, Typescript, PostgreSQL',
 			selectedClass: 'bg-error-500 text-surface-900 text-center',
 			hoverClass: 'hover:bg-error-500 hover:text-surface-900',
 			underlineColor: 'decoration-error-500'
@@ -43,6 +47,8 @@
 			{item.name}
 			<br />
 			{item.description}
+			<br />
+			{item.tech}
 		</div>
 	{/each}
 </div>
