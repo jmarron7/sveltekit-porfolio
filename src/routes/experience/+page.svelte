@@ -16,7 +16,7 @@
 		{
 			year: 'FEB 2023 - PRESENT',
 			icon: 'simple-icons:go',
-			details: 'Started learning Go and Sveltekit'
+			details: 'Started Learning Go and Sveltekit'
 		},
 		{
 			year: 'DEC 2022',
