@@ -36,13 +36,13 @@
 	</div>
 
 	<div class="rounded p-4 -m-4">
-		<h1 class="text-2xl mt-2 font-semibold flex items-center">
+		<h1 class="text-3xl mt-2 font-semibold flex items-center">
 			Jesus Marron
 
 			<span class="align-middle text-base ml-2 text-surface-400"> (he/him) </span>
 		</h1>
 
-		<p class="mt-2 mb-4">Fullstack Software Engineer</p>
+		<h2 class="text-lg mt-2 mb-4">Fullstack Software Engineer</h2>
 
 		<div class="">
 			<div class="inline-flex items-center mr-4 mb-2">
