@@ -1,7 +1,5 @@
 <script lang="ts">
-	import type { PageData } from './$types';
-
-	export let data: PageData;
+	import ProjectCards from '$lib/components/ProjectCards.svelte';
 </script>
 
 <svelte:head>
@@ -9,3 +7,4 @@
 </svelte:head>
 
 <h2 class="text-3xl mb-2 font-semibold">Stuff I've Made</h2>
+<ProjectCards />

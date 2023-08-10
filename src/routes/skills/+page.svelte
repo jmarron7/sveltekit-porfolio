@@ -1,7 +1,4 @@
 <script lang="ts">
-	import type { PageData } from './$types';
-
-	export let data: PageData;
 </script>
 
 <svelte:head>
@@ -33,5 +30,7 @@
 <div class="flex bg-surface-600 hover:bg-error-500/5 mt-4 rounded p-4">
 	<div class="mr-2"><span class="text-error-500">■</span> Other:</div>
 
-	<div class="flex-1">AWS, Azure, Infrastructure-as-Code, REST, gRPC, Git, Windows, Linux</div>
+	<div class="flex-1">
+		AWS, Azure, Infrastructure-as-Code, REST, gRPC, Git, Netlify, Vercel, Windows, Linux
+	</div>
 </div>
