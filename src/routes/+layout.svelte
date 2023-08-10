@@ -9,7 +9,7 @@
 
 </script>
 
-<main class="max-w-4xl m-auto">
+<main class="max-w-4xl m-auto text-success-50">
 	<Header />
 
 	<div class="px-10">
