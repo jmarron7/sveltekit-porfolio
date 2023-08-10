@@ -28,7 +28,12 @@
 			year: 'JUNE 2022 - FEB 2023',
 			icon: 'vaadin:automation',
 			details:
-				'Joined a Platform Team at a SaaS Company as a Software Engineer focusing on Infrastructure Automation'
+				'Joined the Platform Team of a SaaS Company as a Software Engineer focusing on Infrastructure Automation'
+		},
+		{
+			year: '2022',
+			icon: 'healthicons:group-discussion-meetingx3',
+			details: 'Started Attending Local Tech Meetups'
 		},
 		{
 			year: 'AUG 2021 - JUNE 2022',
@@ -119,7 +124,7 @@
 	<title>Jesus Marron - Experience</title>
 </svelte:head>
 
-<h2 class="text-3xl mb-2 font-semibold">My Tech Journey</h2>
+<h2 class="text-3xl mb-6 font-semibold">My Tech Journey</h2>
 {#each details as detail}
 	<div class="flex items-center border rounded p-4 border-base-200 mb-4">
 		<Icon icon={detail.icon} class="text-2xl mr-1" />
