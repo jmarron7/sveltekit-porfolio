@@ -12,9 +12,7 @@
 
 <svelte:window
 	on:scroll={(e) => {
-		//get scroll position
 		const scrollY = window.scrollY;
-		//calculate translateY
 		$y = scrollY * 0.5;
 	}}
 />
