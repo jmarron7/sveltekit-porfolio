@@ -103,7 +103,7 @@
 <br />
 
 <p>
-	Currently, I'm open to work on freelance projects and also open to talking about potential
+	Currently, I'm open to take on freelance projects and also open to talking about potential
 	Software Engineer opportunities. If you are interested in reaching out, feel free to contact me
 	through any means you find in the <a
 		href="/contact"
