@@ -13,11 +13,6 @@
 			link: 'https://github.com/jmarron7'
 		},
 		{
-			name: 'Twitter',
-			icon: 'akar-icons:twitter-fill',
-			link: 'https://twitter.com/jmarron7_dev'
-		},
-		{
 			name: 'LinkedIn',
 			icon: 'akar-icons:linkedin-fill',
 			link: 'https://www.linkedin.com/in/jesusmarron/'
@@ -26,7 +21,7 @@
 </script>
 
 <p class="mt-24 text-center">
-	Made with 💖 by Jesus Marron in
+	Made by Jesus Marron in
 	<span class="text-error-500">Memphis, TN</span>.
 </p>
 

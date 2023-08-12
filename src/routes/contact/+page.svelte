@@ -28,16 +28,6 @@
 	</h3>
 
 	<h3 class="mr-2">
-		<span class="text-tertiary-500">■</span> Twitter:
-		<a
-			href="https://twitter.com/jmarron7_dev"
-			target="_blank"
-			class="underline decoration-2 decoration-tertiary-500 hover:text-tertiary-500"
-			>@jmarron7_dev</a
-		>
-	</h3>
-
-	<h3 class="mr-2">
 		<span class="text-warning-500">■</span> Github:
 		<a
 			href="https://github.com/jmarron7"

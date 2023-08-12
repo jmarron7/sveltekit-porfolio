@@ -9,7 +9,8 @@
 
 <p>
 	I'm a fullstack software engineer based in Memphis, TN. I enjoy listening to live music, being out
-	in nature, eating great food, spending time with loved ones, and creating solutions with code. 🧑‍💻
+	in nature, eating great food, spending time with loved ones, and creating solutions with code.
+	🧑‍💻
 </p>
 
 <br />
@@ -75,9 +76,9 @@
 	issues, spinning up Linux servers in a virtualized environment, and creating automated scripts to
 	increase workflow efficiency. This combination of skills allowed me to transition into a Software
 	Engineering role on a Windows Platform Team where my main focus was on infrastructure automation.
-	During my time there, I worked on creating a service to automate the process in which servers
-	where commisioned, provisioned, and decommissioned via the use of Azure Automation Runbooks where
-	I used Python and Powershell scripts along with infrastructure-as-code tools such as Hashicorp
+	During my time there, I worked on creating a service to automate the process in which servers were
+	commissioned, provisioned, and decommissioned via the use of Azure Automation Runbooks where I
+	used Python and Powershell scripts along with infrastructure-as-code tools such as Hashicorp
 	Packer and VMware APIs. Additionally, I setup Azure Repos for the team to use and provided
 	trainings to the team to explain the benefits of source control and to explain the software
 	development lifecycle.
