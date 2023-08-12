@@ -25,7 +25,7 @@
 	];
 </script>
 
-<p class="mt-8 text-center">
+<p class="mt-24 text-center">
 	Made with 💖 by Jesus Marron in
 	<span class="text-error-500">Memphis, TN</span>.
 </p>
