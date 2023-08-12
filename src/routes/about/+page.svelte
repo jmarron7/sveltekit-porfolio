@@ -54,10 +54,10 @@
 <br />
 
 <p>
-	I was able to land a contract role working as an IT Service Desk Analyst while still enrolled in a
-	Tech901 course. I was still able to find time outside of work to learn more about software
-	development and started to pick up more technologies and languages like Python, Django, React, and
-	Typescript. I also started volunteering with <a
+	I landed a contract role working as an IT Service Desk Analyst while still enrolled in one fo the
+	Tech901 courses. I was continued to learn about software development and started to pick up more
+	technologies and languages like Python, Django, React, and Typescript. I also started volunteering
+	with <a
 		href="https://www.code-crew.org/"
 		target="_blank"
 		class="underline decoration-2 text-error-500 hover:text-error-700">CodeCrew</a
@@ -87,12 +87,10 @@
 <br />
 
 <p>
-	Unfortunately, my time there was cut shorter than I had intended due to layoffs that happened
-	earlier this year. Despite this, I leaned into my natural desire to learn and sharpen my skills
-	and decided that I wanted my next role to be fully in the software development space. I decided to
-	learn Go and Svelte and was immediately hooked by both! After a few months of doing some self
-	study and applying to every job I could find, I decided it was time to change my approach and
-	enrolled in
+	My time there was cut short but used this opportunity to further my learning with the aim of
+	becoming a fully-fledge software engineer. I decided to learn Go and Svelte and was immediately
+	hooked by both! After a few months of doing some self study, I decided it was time to change my
+	approach and enrolled in
 	<a
 		href="https://www.allaboutfasttrack.com/"
 		target="_blank"
@@ -105,12 +103,13 @@
 <br />
 
 <p>
-	Currently, I'm still looking for a permanent or long term role as a Software Engineer. If you are
-	interested in reaching out to me, feel free to contact me through any means you find in the <a
+	Currently, I'm open to work on freelance projects and also open to talking about potential
+	Software Engineer opportunities. If you are interested in reaching out, feel free to contact me
+	through any means you find in the <a
 		href="/contact"
 		class="underline decoration-2 text-success-600 hover:text-success-700">Contact</a
 	>
-	section. Additionally, if you are wanting to connect remotely with other people in the software development
+	section. Additionally, if you want to connect remotely with other people in the software development
 	space, feel free to join the
 	<a
 		href="https://join.slack.com/t/code-connector/shared_invite/zt-20bur4uzb-Xedt2JrRlYTRJjE5SqLlCA"
