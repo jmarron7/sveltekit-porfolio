@@ -11,8 +11,8 @@
 				'WebApp using RAWG API videogame data built with Typescript, React, and ChakraUI with filtering and sorting capabilities',
 			tech: ['React', 'Typescript', 'ChakraUI', 'REST API'],
 			image: GameGuildImg,
-			repoLink: '',
-			demoLink: '',
+			repoUrl: 'https://github.com/jmarron7/game-guild',
+			demoUrl: '',
 			selectedClass: 'bg-primary-500 text-surface-900 text-center',
 			hoverClass: 'hover:bg-primary-500 hover:border-primary-500 hover:text-surface-900',
 			underlineColor: 'decoration-primary-500'
@@ -23,6 +23,8 @@
 				'Cross platform pixel art editor written in Go and Fyne toolkit with functionality to open/save created files, select color via color picker, and more',
 			tech: ['Go', 'Fyne'],
 			image: PixlImg,
+			repoUrl: 'https://github.com/jmarron7/go-pixl',
+			demoUrl: '',
 			selectedClass: 'bg-secondary-500 text-surface-900 text-center',
 			hoverClass: 'hover:bg-secondary-500 hover:border-secondary-500 hover:text-surface-900',
 			underlineColor: 'decoration-secondary-500'
@@ -33,6 +35,8 @@
 				'Python ETL (Extract, Transform, Load) pipeline using the Spotify API on AWS Serverless Architecture',
 			tech: ['Python', 'AWS', 'REST API'],
 			image: ETLProjectImg,
+			repoUrl: 'https://github.com/jmarron7/spotify-etl-project',
+			demoUrl: '',
 			selectedClass: 'bg-tertiary-500 text-surface-900 text-center',
 			hoverClass: 'hover:bg-tertiary-500 hover:border-tertiary-500 hover:text-surface-900',
 			underlineColor: 'decoration-tertiary-500'
@@ -43,6 +47,8 @@
 				'Terminal CLI application of a multithreaded grep implementation written in Go for substring searching within files',
 			tech: ['Go'],
 			image: MGrepImg,
+			repoUrl: 'https://github.com/jmarron7/go-mgrep',
+			demoUrl: '',
 			selectedClass: 'bg-error-500 text-surface-900 text-center',
 			hoverClass: 'hover:bg-error-500 hover:border-error-500 hover:text-surface-900',
 			underlineColor: 'decoration-error-500'
@@ -69,13 +75,18 @@
 
 				<div class="flex flex-row flex-wrap w-full">
 					{#each project.tech as tech}
-						<div class="rounded bg-surface-400/20 hover:bg-surface-50 p-1 mb-2 mx-2">
+						<div class="rounded bg-surface-400/20 hover:bg-surface-50 py-1 px-4 mb-2 mx-2">
 							{tech}
 						</div>
 					{/each}
 				</div>
 			</div>
-			<hr class="opacity-50" />
+			<div class="h-[2px] bg-surface-50/20 w-[96%]" />
+			<div class="p-4 flex justify-start items-center space-x-4">
+				<div>
+					<a href={project.repoUrl} target="_blank" class="underline decoration-2">Source Code</a>
+				</div>
+			</div>
 		</div>
 	{/each}
 </div>

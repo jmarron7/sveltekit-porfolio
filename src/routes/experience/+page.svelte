@@ -28,7 +28,7 @@
 			year: 'JUNE 2022 - FEB 2023',
 			icon: 'vaadin:automation',
 			details:
-				'Joined the Platform Team of a SaaS Company as a Software Engineer focusing on Infrastructure Automation'
+				'Joined the Platform Team of a SaaS Company Where I focused on Infrastructure Automation'
 		},
 		{
 			year: '2022',
@@ -80,7 +80,7 @@
 		{
 			year: '2015',
 			icon: 'ph:code-fill',
-			details: 'Started to Revist and Build Websites in HTML and CSS'
+			details: 'Revisited Building Websites in HTML and CSS'
 		},
 		{
 			year: '2014',
