@@ -1,120 +1,48 @@
-<script context="module">
-	export const prerender = true;
-</script>
-
-<script>
-	const handleSubmit = (e) => {
-		e.preventDefault();
-		let myForm = document.getElementById('contact-form-submission');
-		let formData = new FormData(myForm);
-		fetch('/', {
-			method: 'POST',
-			headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-			body: new URLSearchParams(formData).toString()
-		})
-			.then(() => console.log('Form successfully submitted'))
-			.catch((error) => alert(error));
-	};
+<script lang="ts">
 </script>
 
 <svelte:head>
-	<title>Jesus Marron — Contact</title>
+	<title>Jesus Marron - Contact</title>
 </svelte:head>
 
-<div class="container">
-	<main>
-		<h1>Get in touch</h1>
-		<form
-			name="contact-form-submission"
-			id="contact-form-submission"
-            action="/contact/success"
-			method="POST"
-			netlify
-			netlify-honeypot="bot-field"
-			class="formContainer"
-			on:submit={handleSubmit}
+<h2 class="text-3xl mb-2 font-semibold">Let's Connect</h2>
+<div class="p-4 mt-4">
+	<h3 class="mr-2">
+		<span class="text-primary-500">■</span> Email:
+		<a
+			href="mailto:hello@jesusmarron.com"
+			target="_blank"
+			class="underline decoration-2 decoration-primary-500 hover:text-primary-500"
+			>hello@jesusmarron.com</a
 		>
-			<input type="hidden" name="form-name" value="contact-form-submission" />
-			<label for="name">Name</label>
-			<input name="name" id="name" required placeholder="Your Name" type="text" class="textInput" />
-			<label for="email">Email</label>
-			<input
-				name="email"
-				id="email"
-				required
-				placeholder="Email Address"
-				type="email"
-				class="textInput"
-			/>
-			<label for="message">Message</label>
-			<textarea
-				name="message"
-				id="message"
-				required
-				placeholder="What would you like to talk about?"
-				class="textInput"
-			/>
-			<input type="submit" value="Submit" class="button" />
-		</form>
-	</main>
+	</h3>
+
+	<h3 class="mr-2">
+		<span class="text-secondary-500">■</span> LinkedIn:
+		<a
+			href="https://www.linkedin.com/in/jesusmarron/"
+			target="_blank"
+			class="underline decoration-2 decoration-secondary-500 hover:text-secondary-500"
+			>in/jesusmarron</a
+		>
+	</h3>
+
+	<h3 class="mr-2">
+		<span class="text-tertiary-500">■</span> Twitter:
+		<a
+			href="https://twitter.com/jmarron7_dev"
+			target="_blank"
+			class="underline decoration-2 decoration-tertiary-500 hover:text-tertiary-500"
+			>@jmarron7_dev</a
+		>
+	</h3>
+
+	<h3 class="mr-2">
+		<span class="text-warning-500">■</span> Github:
+		<a
+			href="https://github.com/jmarron7"
+			target="_blank"
+			class="underline decoration-2 decoration-warning-500 hover:text-warning-500">@jmarron7</a
+		>
+	</h3>
 </div>
-
-<style>
-	.container {
-		width: 100%;
-		max-width: 900px;
-		display: flex;
-		justify-content: center;
-		box-sizing: border-box;
-		text-align: center;
-
-		margin: 0 auto;
-		text-align: center;
-	}
-
-	.textInput {
-		padding: 10px;
-	}
-
-	.button {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		color: #080c10;
-		border: 2px solid #080c10;
-		padding: 10px;
-		cursor: pointer;
-	}
-
-	.button:hover {
-		background-color: #ffd100;
-		transition: background-color 0.2s ease-in-out;
-	}
-
-	main {
-		max-width: 100%;
-		min-height: 500px;
-		text-align: left;
-		margin-top: 20px;
-		box-sizing: border-box;
-	}
-
-	h1 {
-		font-weight: 700;
-		margin: 0 0 30px 0;
-		font-size: 36px;
-		text-align: start;
-	}
-
-	.formContainer {
-		display: flex;
-		flex-direction: column;
-		gap: 10px;
-	}
-
-	@media (min-width: 900px) {
-		main > h1 {
-			font-size: 48px;
-		}
-	}
-</style>
