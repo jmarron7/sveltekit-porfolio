@@ -10,7 +10,6 @@
 
 <main class="max-w-4xl m-auto text-success-50">
 	<Header />
-	<Analytics />
 	<div class="px-10">
 		<slot />
 	</div>
